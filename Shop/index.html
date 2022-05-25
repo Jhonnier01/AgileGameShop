@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AgileGameShop</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Agile Game Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Acerca de</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Más populares</a></li>
+                                <li><a class="dropdown-item" href="#!">Recien agregados</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" onclick="resumenC()" action="Carrito.html">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carrito
+                            <span id="carrito" class="badge bg-dark text-white ms-1 rounded-pill">recuperar</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Agile Game Shop</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Agilidad, seguridad & todo en video juegos</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/1.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Play Station 5</h5>
+									<p><small class="fst-italic">Color Blanco Modelo 2022 Memoria 825Gb</small></p>
+                                    <!-- Product price-->
+                                    $1.908.986
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Play Station 5');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/2.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control Play Station 4</h5>
+									<p><small class="fst-italic">Control joystick inalámbrico Sony PlayStation Dualshock 4 jet black</small></p>
+                                    <!-- Product price-->
+                                    $1.727.102
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control Play Station 4');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/3.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Play Station 3</h5>
+									<p><small class="fst-italic">Super Slim 500GB Standard color charcoal black</small></p>
+                                    <!-- Product price-->
+                                    $1.696.452
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Play Station 3');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/4.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Play Station 4</h5>
+									<p><small class="fst-italic">Slim 1TB Standard color negro azabache</small></p>
+                                    <!-- Product price-->
+                                    $2.954.269
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Play Station 4');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/5.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Play Station 2</h5>
+									<p><small class="fst-italic">2 Slim Standard color charcoal black</small></p>
+                                    <!-- Product price-->
+                                    $1.107.881
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Play Station 2');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/6.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">4</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Play Station 1</h5>
+									<p><small class="fst-italic">Classic 16GB color gris</small></p>
+                                    <!-- Product price-->
+                                    $1.875.887
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Play Station 1');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/7.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control Play Station 5</h5>
+									<p><small class="fst-italic">Control joystick inalámbrico Sony PlayStation DualSense CFI-ZCT1 white y black</small></p>
+                                    <!-- Product price-->
+                                    $2.340.210
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control Play Station 5');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/8.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control Play Station 3</h5>
+									<p><small class="fst-italic">Joystick inalámbrico Sony PlayStation Dualshock 3 negro</small></p>
+                                    <!-- Product price-->
+                                    $1.862.945
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control Play Station 3');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/9.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control Play Station 2</h5>
+									<p><small class="fst-italic">Joystick Sony PlayStation Dualshock 2 black</small></p>
+                                    <!-- Product price-->
+                                    $1.646.881
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control Play Station 2');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/10.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">4</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control Play Station 1</h5>
+									<p><small class="fst-italic">Clasico control Playstation gris</small></p>
+                                    <!-- Product price-->
+                                    $1.902.378
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control Play Station 1');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/11.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">XBOX</h5>
+									<p><small class="fst-italic">Xbox Clásico + 2 Controles + Emuladores (Reacondicionado)</small></p>
+                                    <!-- Product price-->
+                                    $2.515.364
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('XBOX');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/12.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">XBOX 360</h5>
+									<p><small class="fst-italic">Xbox 360 5.0 Disco Duro 500 G 90j + 2 Controles + Silicon (Reacondicionado)</small></p>
+                                    <!-- Product price-->
+                                    $1.283.537
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('XBOX 360');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/13.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">XBOX ONE</h5>
+									<p><small class="fst-italic">Consola Xbox One Slim 1000gb / 1TB original de fabrica</small></p>
+                                    <!-- Product price-->
+                                    $1.182.352
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('XBOX ONE');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/14.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">XBOX SERIES X</h5>
+									<p><small class="fst-italic">Microsoft Xbox Series X 1TB Standard color negro</small></p>
+                                    <!-- Product price-->
+                                    $2.244.695
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('XBOX SERIES X');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/15.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">XBOX SERIES S</h5>
+									<p><small class="fst-italic">Microsoft Xbox Series S 512GB Standard color blanco</small></p>
+                                    <!-- Product price-->
+                                    $1.197.837
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('XBOX SERIES S');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/16.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control XBOX</h5>
+									<p><small class="fst-italic">Control Para Xbox Clasico Negro Consola Caja Negra</small></p>
+                                    <!-- Product price-->
+                                    $2.947.113
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control XBOX');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/17.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control XBOX 360</h5>
+									<p><small class="fst-italic">Control Original Xbox 360 Inalambrico</small></p>
+                                    <!-- Product price-->
+                                    $1.334.735
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control XBOX 360');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/18.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control XBOX ONE</h5>
+									<p><small class="fst-italic">Joystick inalámbrico Microsoft Xbox Wireless Controller Series X|S carbon black</small></p>
+                                    <!-- Product price-->
+                                    $2.547.977
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control XBOX ONE');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/19.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control XBOX SERIES X</h5>
+									<p><small class="fst-italic">Joystick inalámbrico Microsoft Xbox Wireless Controller Series X|S electric volt</small></p>
+                                    <!-- Product price-->
+                                    $1.247.729
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control XBOX SERIES X');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/20.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Control XBOX SERIES S</h5>
+									<p><small class="fst-italic">Joystick inalámbrico Microsoft Xbox Wireless Controller Series X|S shock blue</small></p>
+                                    <!-- Product price-->
+                                    $1.425.949
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Control XBOX SERIES S');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/21.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo Switch</h5>
+									<p><small class="fst-italic">Nintendo Switch 32GB Standard color rojo neón, azul neón y negro</small></p>
+                                    <!-- Product price-->
+                                    $1.463.168
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo Switch');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/22.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo Wii U </h5>
+									<p><small class="fst-italic">Nintendo Wii U Console - 32gb Black Deluxe Set</small></p>
+                                    <!-- Product price-->
+                                    $1.641.920
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo Wii U ');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/23.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo Wii</h5>
+									<p><small class="fst-italic">Nintendo Wii Console Black With Wii Sports And Wii</small></p>
+                                    <!-- Product price-->
+                                    $2.719.746
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo Wii');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/24.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">1</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo N64</h5>
+									<p><small class="fst-italic">Nintendo 64 System - Consola de videojuegos (renovada)</small></p>
+                                    <!-- Product price-->
+                                    $2.392.134
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo N64');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/25.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">4</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Super Nintendo</h5>
+									<p><small class="fst-italic">Consola Super NS Entertainment System Classic 21 Juegos</small></p>
+                                    <!-- Product price-->
+                                    $2.101.256
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Super Nintendo');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/26.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">4</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">NES</h5>
+									<p><small class="fst-italic">Control Original Nes Classic Mini Entrega Inmediata</small></p>
+                                    <!-- Product price-->
+                                    $2.515.600
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('NES');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/27.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo DS</h5>
+									<p><small class="fst-italic">Nintendo DS Standard color negro platinum</small></p>
+                                    <!-- Product price-->
+                                    $1.981.730
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo DS');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/28.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo 3ds</h5>
+									<p><small class="fst-italic">Consolas, Nintendo 3DS - COSMO BLACK (Renovado)</small></p>
+                                    <!-- Product price-->
+                                    $2.646.408
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo 3ds');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/29.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo Switch Lite</h5>
+									<p><small class="fst-italic">Nintendo Switch Lite Sistema Hibrido Armadura Azul Magenta</small></p>
+                                    <!-- Product price-->
+                                    $2.905.807
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo Switch Lite');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<!--SIGUIENTE PRODUCTO -->
+					<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/30.jpg" alt="..." height="200"/>
+							<span class="badge bg-dark text-white ms-1 rounded-pill">3</span>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Nintendo Game Boy</h5>
+									<p><small class="fst-italic">Consolas, Nintendo Game Boy Advance - Indigo</small></p>
+                                    <!-- Product price-->
+                                    $2.934.653
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="sumar_producto('Nintendo Game Boy');">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
